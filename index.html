@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qr page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex h-screen w-screen items-center justify-center bg-blue-100">
+    <!-- card -->
+    <div
+      class="flex-col w-[80%] h-[35rem] md:w-[320px] md:h-[31rem] bg-white rounded-2xl card"
+    >
+      <!-- qr container -->
+      <div
+        class="overflow-hidden h-[60%] mx-3 mt-3 rounded-2xl relative bg-blue-500 blue"
+      >
+        <div class="circle absolute top-[-8rem] left-[-10rem]"></div>
+        <div class="circle absolute bottom-[-8rem] right-[-8rem]"></div>
+
+        <!-- qr code -->
+        <div class="h-fit w-fit absolute top-[20%] left-[14%] md:left-[20%]">
+          <img src="public/qr-code.png" alt="qr code" />
+        </div>
+      </div>
+      <!-- text container -->
+      <div class="w-[90%] h-[28%] mt-7 mx-4">
+        <div>
+          <p class="font-bold font-sans text-center text-lg md:text-xl">
+            Improve your front-end skills by building projects
+          </p>
+        </div>
+        <div class="mt-3">
+          <p class="text-center font-light">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
